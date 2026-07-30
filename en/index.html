@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="DolgoreSoft — mobile apps designed to feel as natural as a wave."
+    />
+    <title>DolgoreSoft | 돌고래소프트</title>
+    <link rel="alternate" hreflang="ko" href="../" />
+    <link rel="alternate" hreflang="en" href="./" />
+    <link rel="alternate" hreflang="x-default" href="../" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__glow ambient__glow--a"></div>
+      <div class="ambient__glow ambient__glow--b"></div>
+      <div class="ambient__glow ambient__glow--c"></div>
+      <div class="ambient__spot" data-spot></div>
+      <div class="ambient__caustic"></div>
+      <svg class="ambient__waves" viewBox="0 0 1440 220" preserveAspectRatio="none">
+        <path
+          class="wave wave--back"
+          d="M0,120 C240,180 480,40 720,100 C960,160 1200,60 1440,110 L1440,220 L0,220 Z"
+        />
+        <path
+          class="wave wave--mid"
+          d="M0,140 C200,80 400,180 720,130 C1040,80 1240,170 1440,120 L1440,220 L0,220 Z"
+        />
+        <path
+          class="wave wave--front"
+          d="M0,170 C260,130 520,200 780,160 C1040,120 1240,190 1440,150 L1440,220 L0,220 Z"
+        />
+      </svg>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              class="dolphin-path"
+              d="M8.5 28.5c2.2-7.8 8.4-13.2 16.8-14.2 3.4-.4 6.2.2 8.8 1.8 1.8-3.4 4.6-5.8 8.4-6.6-.6 3.2-2.2 5.6-4.6 7.2 3.2 2.4 5 5.8 5.2 10.2-3.8-1.4-7-1.2-10 .6-2.8 1.8-4.8 4.4-5.6 7.6-3.6-2.2-6.2-5.4-7.4-9.4-2.4 1.8-4.6 2.4-7.2 2.2-.8-2.2-.8-4.2-.4-6.4z"
+              fill="currentColor"
+            />
+            <circle cx="36.2" cy="18.8" r="1.35" fill="#e8fbff" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__ko">DolgoreSoft</span>
+          <span class="brand__en">돌고래소프트</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <nav class="lang" aria-label="Language">
+          <a class="lang__link" href="../" hreflang="ko" lang="ko">KO</a>
+          <a class="lang__link is-active" href="./" hreflang="en" lang="en" aria-current="page">EN</a>
+        </nav>
+        <nav class="nav" aria-label="Primary">
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#work">Work</a>
+          <a href="#contact" class="nav__cta">Contact</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" data-hero>
+        <div class="hero__copy">
+          <p class="hero__brand">DolgoreSoft</p>
+          <h1 class="hero__title">
+            <span class="hero__title-static">We craft</span>
+            <span class="hero__swap" data-swap aria-live="polite">
+              <span class="hero__swap-item is-active">apps</span>
+              <span class="hero__swap-item">flow</span>
+              <span class="hero__swap-item">moments</span>
+            </span>
+            <span class="hero__title-static">you can hold</span>
+          </h1>
+          <p class="hero__lead">
+            Understand deeply. Move lightly.
+            We design mobile experiences as natural as a wave.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact" data-magnetic>
+              <span>Start a project</span>
+            </a>
+            <a class="btn btn--ghost" href="#work">See our work</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-tilt-stage>
+          <div class="sea" aria-hidden="true">
+            <div class="sea__ripple sea__ripple--a"></div>
+            <div class="sea__ripple sea__ripple--b"></div>
+            <div class="sea__bubble" style="--x: 18%; --d: 0s; --s: 8px"></div>
+            <div class="sea__bubble" style="--x: 72%; --d: 1.2s; --s: 6px"></div>
+            <div class="sea__bubble" style="--x: 58%; --d: 2.4s; --s: 10px"></div>
+            <div class="sea__bubble" style="--x: 34%; --d: 3.1s; --s: 5px"></div>
+
+            <svg class="sea__dolphin" viewBox="0 0 240 140" fill="none">
+              <path
+                d="M14 86c6-10 14-18 26-22 4-16 18-30 40-34 18-4 34 0 46 10 8-14 22-24 42-26-2 12-8 22-18 28 18 8 30 24 32 46-16-6-30-4-42 6-8 6-14 14-16 24-14-8-24-20-28-36-12 6-22 8-34 6-6-8-8-16-6-26-14 2-26 8-42 24z"
+                fill="url(#dolphinGradEn)"
+              />
+              <path
+                d="M156 48c8-2 16-1 24 4 2 8-2 14-10 18-8 2-16 0-22-6 2-6 4-12 8-16z"
+                fill="url(#dolphinGradEn)"
+                opacity="0.9"
+              />
+              <circle cx="168" cy="52" r="3.4" fill="#f4fdff" />
+              <path
+                d="M188 34c10-4 22-2 30 6-12 2-22 8-28 18-4-8-6-16-2-24z"
+                fill="url(#dolphinGradEn)"
+                opacity="0.85"
+              />
+              <defs>
+                <linearGradient id="dolphinGradEn" x1="20" y1="30" x2="210" y2="110">
+                  <stop stop-color="#6fd0db" />
+                  <stop offset="0.55" stop-color="#1494a3" />
+                  <stop offset="1" stop-color="#0a5f6c" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <button
+            class="phone"
+            type="button"
+            data-phone
+            aria-label="Advance app preview screens"
+          >
+            <div class="phone__bezel" data-tilt>
+              <div class="phone__notch"></div>
+              <div class="phone__screen">
+                <div class="phone__slides" data-slides>
+                  <article class="phone__slide is-active" data-slide="0">
+                    <div class="ui-status">
+                      <span>9:41</span>
+                      <span class="ui-dots"></span>
+                    </div>
+                    <p class="ui-eyebrow">Tide</p>
+                    <h3 class="ui-title">Morning dive</h3>
+                    <div class="ui-hero-block ui-hero-block--sea"></div>
+                    <div class="ui-row">
+                      <div class="ui-chip">Focus</div>
+                      <div class="ui-chip">Flow</div>
+                    </div>
+                    <div class="ui-cta">Continue</div>
+                  </article>
+                  <article class="phone__slide" data-slide="1">
+                    <div class="ui-status">
+                      <span>9:41</span>
+                      <span class="ui-dots"></span>
+                    </div>
+                    <p class="ui-eyebrow">Current</p>
+                    <h3 class="ui-title">Weekly pulse</h3>
+                    <div class="ui-bars" aria-hidden="true">
+                      <span style="--h: 42%"></span>
+                      <span style="--h: 68%"></span>
+                      <span style="--h: 54%"></span>
+                      <span style="--h: 86%"></span>
+                      <span style="--h: 70%"></span>
+                    </div>
+                    <div class="ui-stat">
+                      <strong>+18%</strong>
+                      <span>smoother flow</span>
+                    </div>
+                  </article>
+                  <article class="phone__slide" data-slide="2">
+                    <div class="ui-status">
+                      <span>9:41</span>
+                      <span class="ui-dots"></span>
+                    </div>
+                    <p class="ui-eyebrow">Pod</p>
+                    <h3 class="ui-title">3 signals</h3>
+                    <div class="ui-list">
+                      <div class="ui-list-item">
+                        <span class="ui-avatar"></span>
+                        <span class="ui-lines"><i></i><i></i></span>
+                      </div>
+                      <div class="ui-list-item">
+                        <span class="ui-avatar"></span>
+                        <span class="ui-lines"><i></i><i></i></span>
+                      </div>
+                      <div class="ui-list-item">
+                        <span class="ui-avatar"></span>
+                        <span class="ui-lines"><i></i><i></i></span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="phone__dots" data-dots aria-hidden="true">
+                  <span class="is-active"></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <p class="hero__hint">Tap the screen for the next wave</p>
+        </div>
+      </section>
+
+      <section id="services" class="section" data-reveal>
+        <div class="section__head">
+          <h2>Services</h2>
+          <p>From the depth of an idea to the surface users touch.</p>
+        </div>
+        <ul class="service-list">
+          <li class="service-item" data-reveal-item>
+            <span class="service-item__index">01</span>
+            <h3>Mobile app development</h3>
+            <p>iOS · Android native and cross-platform apps, designed and built end to end.</p>
+          </li>
+          <li class="service-item" data-reveal-item>
+            <span class="service-item__index">02</span>
+            <h3>Product design</h3>
+            <p>Flows, UX, and prototypes — the work that happens before launch.</p>
+          </li>
+          <li class="service-item" data-reveal-item>
+            <span class="service-item__index">03</span>
+            <h3>Launch &amp; care</h3>
+            <p>Store release, updates, and ongoing maintenance after you ship.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="section section--about" data-reveal>
+        <div class="section__head">
+          <h2>About</h2>
+          <p>DolgoreSoft focuses on mobile app development.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-story" data-reveal-item>
+            <p class="about-lead">
+              Like a dolphin — we understand deeply and move with agility.
+            </p>
+            <p class="about-body">
+              Turning complex features into simple experiences.
+              That’s the gap DolgoreSoft closes.
+            </p>
+          </div>
+          <dl class="about-meta" data-reveal-item>
+            <div>
+              <dt>Name</dt>
+              <dd>DolgoreSoft (돌고래소프트)</dd>
+            </div>
+            <div>
+              <dt>Focus</dt>
+              <dd>Mobile app development</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>604-F74, 1068 Hyohaeng-ro, Byeongjeom-gu, Hwaseong-si, Gyeonggi-do</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="work" class="section" data-reveal>
+        <div class="section__head">
+          <h2>Work</h2>
+          <p>Projects we’ve shipped — or are shipping — live here.</p>
+        </div>
+        <ul class="work-list">
+          <li class="work-item work-item--empty" data-reveal-item>
+            <span class="work-item__label">Coming soon</span>
+            <h3>Projects in progress</h3>
+            <p>Portfolio pieces will land here soon.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section section--contact" data-reveal>
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p>Ready to start a new wave? Reach out anytime.</p>
+        </div>
+        <div class="contact-block" data-reveal-item>
+          <a class="contact-link" href="mailto:dolgoresoft@gmail.com">
+            dolgoresoft@gmail.com
+          </a>
+          <address class="contact-address">
+            604-F74, 1068 Hyohaeng-ro, Byeongjeom-gu,<br />
+            Hwaseong-si, Gyeonggi-do, Korea<br />
+            (Byeongjeom-dong, Leaders Plaza)
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__brand">
+        <span class="brand__mark brand__mark--sm" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              d="M8.5 28.5c2.2-7.8 8.4-13.2 16.8-14.2 3.4-.4 6.2.2 8.8 1.8 1.8-3.4 4.6-5.8 8.4-6.6-.6 3.2-2.2 5.6-4.6 7.2 3.2 2.4 5 5.8 5.2 10.2-3.8-1.4-7-1.2-10 .6-2.8 1.8-4.8 4.4-5.6 7.6-3.6-2.2-6.2-5.4-7.4-9.4-2.4 1.8-4.6 2.4-7.2 2.2-.8-2.2-.8-4.2-.4-6.4z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <div>
+          <span class="brand__ko">DolgoreSoft</span>
+          <span class="brand__en">돌고래소프트</span>
+        </div>
+      </div>
+      <p>
+        <a href="mailto:dolgoresoft@gmail.com">dolgoresoft@gmail.com</a>
+        · © <span id="year"></span> DolgoreSoft
+      </p>
+    </footer>
+
+    <script src="../main.js"></script>
+  </body>
+</html>

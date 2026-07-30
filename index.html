@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="돌고래소프트 — 물결처럼 자연스러운 모바일 앱을 만듭니다."
+    />
+    <title>돌고래소프트 | DolgoreSoft</title>
+    <link rel="alternate" hreflang="ko" href="./" />
+    <link rel="alternate" hreflang="en" href="./en/" />
+    <link rel="alternate" hreflang="x-default" href="./" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__glow ambient__glow--a"></div>
+      <div class="ambient__glow ambient__glow--b"></div>
+      <div class="ambient__glow ambient__glow--c"></div>
+      <div class="ambient__spot" data-spot></div>
+      <div class="ambient__caustic"></div>
+      <svg class="ambient__waves" viewBox="0 0 1440 220" preserveAspectRatio="none">
+        <path
+          class="wave wave--back"
+          d="M0,120 C240,180 480,40 720,100 C960,160 1200,60 1440,110 L1440,220 L0,220 Z"
+        />
+        <path
+          class="wave wave--mid"
+          d="M0,140 C200,80 400,180 720,130 C1040,80 1240,170 1440,120 L1440,220 L0,220 Z"
+        />
+        <path
+          class="wave wave--front"
+          d="M0,170 C260,130 520,200 780,160 C1040,120 1240,190 1440,150 L1440,220 L0,220 Z"
+        />
+      </svg>
+    </div>
+
+    <header class="site-header">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              class="dolphin-path"
+              d="M8.5 28.5c2.2-7.8 8.4-13.2 16.8-14.2 3.4-.4 6.2.2 8.8 1.8 1.8-3.4 4.6-5.8 8.4-6.6-.6 3.2-2.2 5.6-4.6 7.2 3.2 2.4 5 5.8 5.2 10.2-3.8-1.4-7-1.2-10 .6-2.8 1.8-4.8 4.4-5.6 7.6-3.6-2.2-6.2-5.4-7.4-9.4-2.4 1.8-4.6 2.4-7.2 2.2-.8-2.2-.8-4.2-.4-6.4z"
+              fill="currentColor"
+            />
+            <circle cx="36.2" cy="18.8" r="1.35" fill="#e8fbff" />
+          </svg>
+        </span>
+        <span class="brand__text">
+          <span class="brand__ko">돌고래소프트</span>
+          <span class="brand__en">DolgoreSoft</span>
+        </span>
+      </a>
+      <div class="header-actions">
+        <nav class="lang" aria-label="언어 선택">
+          <a class="lang__link is-active" href="./" hreflang="ko" lang="ko" aria-current="page">KO</a>
+          <a class="lang__link" href="./en/" hreflang="en" lang="en">EN</a>
+        </nav>
+        <nav class="nav" aria-label="주요 메뉴">
+          <a href="#services">서비스</a>
+          <a href="#about">소개</a>
+          <a href="#work">작업</a>
+          <a href="#contact" class="nav__cta">문의</a>
+        </nav>
+        <button class="nav-toggle" type="button" aria-label="메뉴 열기" aria-expanded="false">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" data-hero>
+        <div class="hero__copy">
+          <p class="hero__brand">돌고래소프트</p>
+          <h1 class="hero__title">
+            <span class="hero__title-static">손에 잡히는</span>
+            <span class="hero__swap" data-swap aria-live="polite">
+              <span class="hero__swap-item is-active">앱을</span>
+              <span class="hero__swap-item">흐름을</span>
+              <span class="hero__swap-item">경험을</span>
+            </span>
+            <span class="hero__title-static">만듭니다</span>
+          </h1>
+          <p class="hero__lead">
+            깊이 이해하고, 가볍게 움직입니다.
+            물결처럼 자연스러운 모바일 경험을 설계합니다.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact" data-magnetic>
+              <span>프로젝트 문의</span>
+            </a>
+            <a class="btn btn--ghost" href="#work">작업 살펴보기</a>
+          </div>
+        </div>
+
+        <div class="hero__visual" data-tilt-stage>
+          <div class="sea" aria-hidden="true">
+            <div class="sea__ripple sea__ripple--a"></div>
+            <div class="sea__ripple sea__ripple--b"></div>
+            <div class="sea__bubble" style="--x: 18%; --d: 0s; --s: 8px"></div>
+            <div class="sea__bubble" style="--x: 72%; --d: 1.2s; --s: 6px"></div>
+            <div class="sea__bubble" style="--x: 58%; --d: 2.4s; --s: 10px"></div>
+            <div class="sea__bubble" style="--x: 34%; --d: 3.1s; --s: 5px"></div>
+
+            <svg class="sea__dolphin" viewBox="0 0 240 140" fill="none">
+              <path
+                d="M14 86c6-10 14-18 26-22 4-16 18-30 40-34 18-4 34 0 46 10 8-14 22-24 42-26-2 12-8 22-18 28 18 8 30 24 32 46-16-6-30-4-42 6-8 6-14 14-16 24-14-8-24-20-28-36-12 6-22 8-34 6-6-8-8-16-6-26-14 2-26 8-42 24z"
+                fill="url(#dolphinGrad)"
+              />
+              <path
+                d="M156 48c8-2 16-1 24 4 2 8-2 14-10 18-8 2-16 0-22-6 2-6 4-12 8-16z"
+                fill="url(#dolphinGrad)"
+                opacity="0.9"
+              />
+              <circle cx="168" cy="52" r="3.4" fill="#f4fdff" />
+              <path
+                d="M188 34c10-4 22-2 30 6-12 2-22 8-28 18-4-8-6-16-2-24z"
+                fill="url(#dolphinGrad)"
+                opacity="0.85"
+              />
+              <defs>
+                <linearGradient id="dolphinGrad" x1="20" y1="30" x2="210" y2="110">
+                  <stop stop-color="#6fd0db" />
+                  <stop offset="0.55" stop-color="#1494a3" />
+                  <stop offset="1" stop-color="#0a5f6c" />
+                </linearGradient>
+              </defs>
+            </svg>
+          </div>
+
+          <button
+            class="phone"
+            type="button"
+            data-phone
+            aria-label="앱 미리보기 화면 넘기기"
+          >
+            <div class="phone__bezel" data-tilt>
+              <div class="phone__notch"></div>
+              <div class="phone__screen">
+                <div class="phone__slides" data-slides>
+                  <article class="phone__slide is-active" data-slide="0">
+                    <div class="ui-status">
+                      <span>9:41</span>
+                      <span class="ui-dots"></span>
+                    </div>
+                    <p class="ui-eyebrow">Tide</p>
+                    <h3 class="ui-title">Morning dive</h3>
+                    <div class="ui-hero-block ui-hero-block--sea"></div>
+                    <div class="ui-row">
+                      <div class="ui-chip">Focus</div>
+                      <div class="ui-chip">Flow</div>
+                    </div>
+                    <div class="ui-cta">Continue</div>
+                  </article>
+                  <article class="phone__slide" data-slide="1">
+                    <div class="ui-status">
+                      <span>9:41</span>
+                      <span class="ui-dots"></span>
+                    </div>
+                    <p class="ui-eyebrow">Current</p>
+                    <h3 class="ui-title">Weekly pulse</h3>
+                    <div class="ui-bars" aria-hidden="true">
+                      <span style="--h: 42%"></span>
+                      <span style="--h: 68%"></span>
+                      <span style="--h: 54%"></span>
+                      <span style="--h: 86%"></span>
+                      <span style="--h: 70%"></span>
+                    </div>
+                    <div class="ui-stat">
+                      <strong>+18%</strong>
+                      <span>smoother flow</span>
+                    </div>
+                  </article>
+                  <article class="phone__slide" data-slide="2">
+                    <div class="ui-status">
+                      <span>9:41</span>
+                      <span class="ui-dots"></span>
+                    </div>
+                    <p class="ui-eyebrow">Pod</p>
+                    <h3 class="ui-title">3 signals</h3>
+                    <div class="ui-list">
+                      <div class="ui-list-item">
+                        <span class="ui-avatar"></span>
+                        <span class="ui-lines"><i></i><i></i></span>
+                      </div>
+                      <div class="ui-list-item">
+                        <span class="ui-avatar"></span>
+                        <span class="ui-lines"><i></i><i></i></span>
+                      </div>
+                      <div class="ui-list-item">
+                        <span class="ui-avatar"></span>
+                        <span class="ui-lines"><i></i><i></i></span>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+                <div class="phone__dots" data-dots aria-hidden="true">
+                  <span class="is-active"></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </button>
+
+          <p class="hero__hint">화면을 탭하면 다음 물결로</p>
+        </div>
+      </section>
+
+      <section id="services" class="section" data-reveal>
+        <div class="section__head">
+          <h2>서비스</h2>
+          <p>아이디어의 깊은 곳에서, 사용자가 만지는 표면까지.</p>
+        </div>
+        <ul class="service-list">
+          <li class="service-item" data-reveal-item>
+            <span class="service-item__index">01</span>
+            <h3>모바일 앱 개발</h3>
+            <p>iOS · Android 네이티브 및 크로스플랫폼 앱을 설계하고 구현합니다.</p>
+          </li>
+          <li class="service-item" data-reveal-item>
+            <span class="service-item__index">02</span>
+            <h3>제품 설계</h3>
+            <p>화면 흐름, UX, 프로토타입까지 출시 전 필요한 설계를 함께합니다.</p>
+          </li>
+          <li class="service-item" data-reveal-item>
+            <span class="service-item__index">03</span>
+            <h3>출시 · 운영</h3>
+            <p>스토어 등록, 업데이트, 유지보수까지 출시 이후도 이어갑니다.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="section section--about" data-reveal>
+        <div class="section__head">
+          <h2>소개</h2>
+          <p>돌고래소프트는 모바일 앱 개발에 집중합니다.</p>
+        </div>
+        <div class="about-grid">
+          <div class="about-story" data-reveal-item>
+            <p class="about-lead">
+              돌고래처럼 — 깊이 이해하고, 유연하게 움직입니다.
+            </p>
+            <p class="about-body">
+              복잡한 기능을 단순한 사용감으로 바꾸는 일.
+              돌고래소프트는 그 간격을 메우는 개발을 합니다.
+            </p>
+          </div>
+          <dl class="about-meta" data-reveal-item>
+            <div>
+              <dt>상호</dt>
+              <dd>돌고래소프트 (DolgoreSoft)</dd>
+            </div>
+            <div>
+              <dt>분야</dt>
+              <dd>모바일 앱 개발</dd>
+            </div>
+            <div>
+              <dt>소재지</dt>
+              <dd>경기도 화성시 병점구 효행로 1068, 604-F74호</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="work" class="section" data-reveal>
+        <div class="section__head">
+          <h2>작업</h2>
+          <p>진행했거나 진행 중인 프로젝트가 이곳에 자리합니다.</p>
+        </div>
+        <ul class="work-list">
+          <li class="work-item work-item--empty" data-reveal-item>
+            <span class="work-item__label">Coming soon</span>
+            <h3>프로젝트 준비 중</h3>
+            <p>포트폴리오 항목을 곧 업데이트합니다.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact" class="section section--contact" data-reveal>
+        <div class="section__head">
+          <h2>문의</h2>
+          <p>새로운 물결을 시작할 준비가 되면 편하게 연락해 주세요.</p>
+        </div>
+        <div class="contact-block" data-reveal-item>
+          <a class="contact-link" href="mailto:dolgoresoft@gmail.com">
+            dolgoresoft@gmail.com
+          </a>
+          <address class="contact-address">
+            경기도 화성시 병점구 효행로 1068, 604-F74호<br />
+            (병점동, 리더스프라자)
+          </address>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__brand">
+        <span class="brand__mark brand__mark--sm" aria-hidden="true">
+          <svg viewBox="0 0 48 48" fill="none">
+            <path
+              d="M8.5 28.5c2.2-7.8 8.4-13.2 16.8-14.2 3.4-.4 6.2.2 8.8 1.8 1.8-3.4 4.6-5.8 8.4-6.6-.6 3.2-2.2 5.6-4.6 7.2 3.2 2.4 5 5.8 5.2 10.2-3.8-1.4-7-1.2-10 .6-2.8 1.8-4.8 4.4-5.6 7.6-3.6-2.2-6.2-5.4-7.4-9.4-2.4 1.8-4.6 2.4-7.2 2.2-.8-2.2-.8-4.2-.4-6.4z"
+              fill="currentColor"
+            />
+          </svg>
+        </span>
+        <div>
+          <span class="brand__ko">돌고래소프트</span>
+          <span class="brand__en">DolgoreSoft</span>
+        </div>
+      </div>
+      <p>
+        <a href="mailto:dolgoresoft@gmail.com">dolgoresoft@gmail.com</a>
+        · © <span id="year"></span> 돌고래소프트
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
