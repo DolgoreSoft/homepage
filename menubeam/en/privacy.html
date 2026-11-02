@@ -14,14 +14,16 @@ main{max-width:760px;margin:auto;padding:32px 16px 64px}h1{font-size:28px;line-h
 <table><tr><th>Category</th><th>Data</th><th>When</th></tr>
 <tr><td>Account</td><td>Email, password (for email sign-up, handled by the authentication service), account identifier and email provided by Google or Apple sign-in</td><td>Sign-up and sign-in</td></tr>
 <tr><td>Store content</td><td>Store name, menu names, prices, and descriptions, menu photos, logo, background images, notices, slides, TV screen names and settings</td><td>When the owner enters or uploads them</td></tr>
+<tr><td>Diagnostics and device</td><td>App crash records, device model, OS and app version, installation identifier, app integrity token</td><td>While the app runs and when errors occur</td></tr>
 <tr><td>TV device</td><td>Anonymous account identifier of the TV app, pairing code, linked store and screen, last-seen time</td><td>While the TV app runs or is paired</td></tr></table>
 <p>We do not collect location or contacts and we do not show ads. The camera is used only to take menu photos and scan the TV pairing QR code, and the photo library is accessed only for photos you choose. QR scanning video is not sent to our servers.</p>
 <h2>2. How we use it</h2>
-<ul><li>Sign-in and account management</li><li>Storing menu board content and showing it on TVs</li><li>Pairing phones and TVs and showing TV online status</li><li>Applying plans, answering inquiries, and fixing problems</li></ul>
+<ul><li>Sign-in and account management</li><li>Storing menu board content and showing it on TVs</li><li>Pairing phones and TVs and showing TV online status</li><li>Applying plans, answering inquiries, and fixing problems</li><li>Analyzing app errors and preventing abuse</li></ul>
 <h2>3. Retention and deletion</h2>
 <ul><li><b>Account and store content:</b> Kept until you delete your account, or longer if a law requires it.</li>
 <li><b>TV pairing data:</b> Deleted when you unpair the TV or delete your account.</li>
 <li><b>TV anonymous account:</b> A device identifier with no name or email. It remains after an owner account is deleted so the TV app can be paired again. Clearing the TV app's data ends that device's link to it.</li>
+<li><b>Crash records:</b> Deleted after a period under Firebase Crashlytics retention policies.</li>
 <li><b>Pairing codes:</b> Expire after about 9 minutes and can no longer be used.</li></ul>
 <p>Deleted data cannot be recovered. See the <a href="delete-account.html">account deletion page</a> for how to delete your account.</p>
 <h2>4. Processors and international transfers</h2>
@@ -30,6 +32,8 @@ main{max-width:760px;margin:auto;padding:32px 16px 64px}h1{font-size:28px;line-h
 <tr><td>Google Cloud Firestore</td><td>Data storage (Seoul, South Korea region)</td><td>Store content, TV pairing data</td></tr>
 <tr><td>Google Cloud Storage for Firebase</td><td>Photo storage</td><td>Menu photos, logo, background images</td></tr>
 <tr><td>Google Cloud Functions</td><td>Account deletion (Seoul, South Korea region)</td><td>Account identifier</td></tr>
+<tr><td>Firebase Crashlytics</td><td>App error analysis</td><td>Crash records, device and app data, installation identifier</td></tr>
+<tr><td>Firebase App Check, Google Play Integrity</td><td>Verifying genuine apps and preventing abuse</td><td>App integrity token, device data</td></tr>
 <tr><td>Google Sign-In, Sign in with Apple</td><td>Social sign-in</td><td>Account data those companies provide</td></tr></table>
 <p>Some data may be processed in the United States and other regions where Google or Apple operate. We do not sell personal information, and we do not provide it for other purposes unless a law requires it.</p>
 <p><a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></p>

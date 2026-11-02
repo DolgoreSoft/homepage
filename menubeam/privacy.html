@@ -14,14 +14,16 @@ main{max-width:760px;margin:auto;padding:32px 16px 64px}h1{font-size:28px;line-h
 <table><tr><th>구분</th><th>항목</th><th>수집 시점</th></tr>
 <tr><td>계정</td><td>이메일, 비밀번호(이메일 가입 시, 인증 서비스에서 처리), Google 또는 Apple 로그인이 제공하는 계정 식별자·이메일</td><td>가입·로그인</td></tr>
 <tr><td>매장 콘텐츠</td><td>매장 이름, 메뉴 이름·가격·설명, 메뉴 사진, 로고, 배경 이미지, 공지, 슬라이드, TV 화면 이름과 설정</td><td>사장님이 입력·업로드할 때</td></tr>
+<tr><td>오류·기기 정보</td><td>앱 오류 기록, 기기 모델, 운영체제와 앱 버전, 설치 식별자, 앱 무결성 확인 토큰</td><td>앱 실행 중, 오류 발생 시</td></tr>
 <tr><td>TV 기기</td><td>TV 앱의 익명 계정 식별자, 연결 코드, 연결된 매장·화면 정보, 마지막 접속 시각</td><td>TV 앱 실행·연결 중</td></tr></table>
 <p>위치, 연락처를 수집하지 않으며, 광고를 표시하지 않습니다. 카메라는 메뉴 사진 촬영과 TV 연결 QR 스캔에만 쓰고, 사진 보관함은 사용자가 고른 사진에만 접근합니다. QR 스캔 영상은 서버로 보내지 않습니다.</p>
 <h2>2. 이용 목적</h2>
-<ul><li>로그인과 계정 유지</li><li>메뉴판 콘텐츠의 저장과 TV 표시</li><li>폰과 TV의 연결, TV 온라인 상태 표시</li><li>요금제 적용과 문의 대응, 오류 대응</li></ul>
+<ul><li>로그인과 계정 유지</li><li>메뉴판 콘텐츠의 저장과 TV 표시</li><li>폰과 TV의 연결, TV 온라인 상태 표시</li><li>요금제 적용과 문의 대응, 오류 대응</li><li>앱 오류 분석과 서비스 악용 방지</li></ul>
 <h2>3. 보유 및 파기</h2>
 <ul><li><b>계정과 매장 콘텐츠:</b> 계정을 삭제할 때까지 보관합니다. 법령에 보관 의무가 있으면 그 기간 동안 보관합니다.</li>
 <li><b>TV 연결 정보:</b> 연결을 해제하거나 계정을 삭제하면 지웁니다.</li>
 <li><b>TV 익명 계정:</b> 이름이나 이메일이 없는 기기용 식별자로, 사장님 계정을 삭제해도 TV 앱을 다시 연결할 수 있도록 남습니다. TV 앱 데이터를 지우면 그 기기와의 연결이 끊어집니다.</li>
+<li><b>오류 기록:</b> Firebase Crashlytics 보관 정책에 따라 일정 기간 뒤 삭제됩니다.</li>
 <li><b>연결 코드:</b> 약 9분 뒤 만료되어 쓸 수 없습니다.</li></ul>
 <p>파기 시 복구할 수 없는 방법으로 삭제합니다. 삭제 방법은 <a href="delete-account.html">계정 삭제 안내</a>를 확인해 주세요.</p>
 <h2>4. 처리 위탁 및 국외 이전</h2>
@@ -30,6 +32,8 @@ main{max-width:760px;margin:auto;padding:32px 16px 64px}h1{font-size:28px;line-h
 <tr><td>Google Cloud Firestore</td><td>데이터 저장 (대한민국 서울 리전)</td><td>매장 콘텐츠, TV 연결 정보</td></tr>
 <tr><td>Google Cloud Storage for Firebase</td><td>사진 저장</td><td>메뉴 사진, 로고, 배경 이미지</td></tr>
 <tr><td>Google Cloud Functions</td><td>계정 삭제 처리 (대한민국 서울 리전)</td><td>계정 식별자</td></tr>
+<tr><td>Firebase Crashlytics</td><td>앱 오류 분석</td><td>오류 기록, 기기·앱 정보, 설치 식별자</td></tr>
+<tr><td>Firebase App Check, Google Play Integrity</td><td>정상 앱 확인, 악용 방지</td><td>앱 무결성 확인 토큰, 기기 정보</td></tr>
 <tr><td>Google 로그인, Apple 로그인</td><td>소셜 로그인</td><td>각 사가 제공하는 계정 정보</td></tr></table>
 <p>일부 정보는 미국 등 Google 또는 Apple이 운영하는 지역에서 처리될 수 있습니다. 개인정보를 판매하지 않으며, 법령에 따른 요청이 아닌 한 위 목적 외로 제공하지 않습니다.</p>
 <p><a href="https://policies.google.com/privacy">Google 개인정보처리방침</a> · <a href="https://www.apple.com/legal/privacy/">Apple 개인정보처리방침</a></p>
